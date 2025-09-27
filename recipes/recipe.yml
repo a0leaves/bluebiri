@@ -28,8 +28,5 @@ modules:
         - pavucontrol
         - swaylock
         - waybar
-        - wireplumber
-        - xdg-desktop-portal-gnome
-        - xdg-desktop-portal-gtk
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
