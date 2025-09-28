@@ -30,6 +30,7 @@ modules:
         - waybar
 
   - type: chezmoi
+    repository:
     disable-init: true
     disable-update: true
 
