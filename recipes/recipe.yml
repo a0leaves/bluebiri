@@ -6,7 +6,7 @@ name: bluebiri
 description: The silverblue-main image from Universal Blue with niri included. Made with BlueBuild.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/bluefin
 image-version: 42 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -21,13 +21,8 @@ modules:
     install:
       packages:
         - niri
-        - mako
-        - wlogout
-        - alacritty
-        - fuzzel
-        - pavucontrol
-        - swaylock
-        - waybar
+        - lxqt-panel
+        - lxqt-session
 
   - type: chezmoi
     repository: ""
