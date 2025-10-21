@@ -21,34 +21,9 @@ modules:
     install:
       packages:
         - niri
-        - breeze-cursor-theme
-        - breeze-gtk
-        - breeze-icon-theme
-        - firefox
-        - firewall-config
-        - lxqt-about
-        - lxqt-archiver
-        - lxqt-config
-        - lxqt-globalkeys
-        - lxqt-notificationd
-        - lxqt-openssh-askpass
-        - lxqt-panel
-        - lxqt-policykit
-        - lxqt-powermanagement
-        - lxqt-qtplugin
-        - lxqt-runner
-        - lxqt-session
-        - lxqt-themes
-        - lxqt-themes-fedora
-        - lxqt-wayland-session-default-compositor-miriway
-        - network-manager-applet
-        - niri
-        - nm-connection-editor
-        - notification-daemon
-        - obconf
-        - perl-File-MimeInfo
-        - upower
-        - xdg-user-dirs
+        - fuzzel
+        - waybar
+        - mako
 
   - type: chezmoi
     repository: ""
