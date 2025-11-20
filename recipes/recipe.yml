@@ -24,7 +24,7 @@ modules:
         - fuzzel
         - waybar
         - mako
-        - swww
+        - awww
         - godot
         - virt-viewer
         - steam
