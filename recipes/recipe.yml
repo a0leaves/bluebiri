@@ -28,9 +28,9 @@ modules:
         - fuzzel
         - waybar
         - mako
+        - plasma-polkit
         - swww
-        - godot
-        - virt-viewer
+        - microsoft-edge
         - steam
         
 
