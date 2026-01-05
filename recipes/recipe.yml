@@ -21,6 +21,7 @@ modules:
     repos:
         files:
           - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+          - https://packages.microsoft.com/yumrepos/edge/config.repo
         cleanup: true
     install:
       packages:
@@ -28,7 +29,7 @@ modules:
         - fuzzel
         - waybar
         - mako
-        - plasma-polkit
+        - polkit-kde
         - swww
         - microsoft-edge
         - steam
