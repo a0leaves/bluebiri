@@ -31,7 +31,7 @@ modules:
         - mako
         - polkit-kde
         - swww
-        - microsoft-edge
+        - microsoft-edge-stable
         - steam
         
 
