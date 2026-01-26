@@ -6,8 +6,8 @@ name: bluebiri
 description: The bluefin image from Universal Blue with niri included. Made with BlueBuild.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bluefin-dx
-image-version: stable # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/bluefin
+image-version: stable
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -33,6 +33,5 @@ modules:
         - swww
         - microsoft-edge-stable
         - steam
-        
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
