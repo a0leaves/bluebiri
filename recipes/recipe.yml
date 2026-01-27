@@ -23,6 +23,7 @@ modules:
         - niri
         - fuzzel
         - waybar
+        - xdg-desktop-portal
         - mako
         - polkit-kde
         - swww
