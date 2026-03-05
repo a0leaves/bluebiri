@@ -3,7 +3,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: bluebiri
 # description will be included in the image's metadata
-description: The bluefin image from Universal Blue with niri included. Made with BlueBuild.
+description: The bluefin image from Universal Blue with niri included. Made with Blue Build.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bluefin
@@ -16,7 +16,8 @@ modules:
     repos:
         files:
           - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-          - https://packages.microsoft.com/yumrepos/edge/config.repo
+        copr:
+          - yalter/niri
         cleanup: true
     install:
       packages:
