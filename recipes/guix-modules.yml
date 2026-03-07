@@ -1,0 +1,15 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+modules:
+  - type: dnf
+    install:
+      packages:
+        - wget
+        - tar
+        - xz
+        - glibc-langpack-en
+
+  - type: script
+    snippets:
+        - "ln -s var/gnu /gnu"

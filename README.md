@@ -2,6 +2,12 @@
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
+## Changelog
+# GUIX
+- Enabled GUIX user creation
+- Enabled `dnf` module to ensure installation of GUIX prerequisites
+- Symlinked `var/gnu` to `gnu`
+
 ## Installation
 
 > [!WARNING]
@@ -11,7 +17,12 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
+  # Bluefin-based
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/a0leaves/bluebiri:latest
+  ```
+  ```
+  # Bazzite-based
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/a0leaves/bazzbiri:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -19,7 +30,12 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
+  # Bluefin-based
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/a0leaves/bluebiri:latest
+  ```
+    ```
+  # Bazzite-based
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/a0leaves/bazzbiri:latest
   ```
 - Reboot again to complete the installation
   ```
