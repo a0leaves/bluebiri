@@ -14,12 +14,10 @@ modules:
         - niri
         - fuzzel
         - waybar
-        - xdg-desktop-portal
         - mako
         - polkit-kde
         - swww
       exclude:
-        - swaybg
         - swayidle
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
