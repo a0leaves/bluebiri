@@ -16,4 +16,4 @@ modules:
 
   - type: script
     snippets:
-        - "ln -s /var/gnu /gnu"
+        - "ln -s var/gnu /gnu"
