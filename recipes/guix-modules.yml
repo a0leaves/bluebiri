@@ -2,6 +2,10 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 
 modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
   - type: dnf
     install:
       packages:
@@ -12,4 +16,4 @@ modules:
 
   - type: script
     snippets:
-        - "ln -s var/gnu /gnu"
+        - "ln -s /var/gnu /gnu"
