@@ -4,8 +4,11 @@
 modules:
   - type: files
     files:
-      - source: system
+      - source: guix-users-system
         destination: /
+      - source: guix-profile-script-system
+        destination: /
+
   - type: dnf
     install:
       packages:

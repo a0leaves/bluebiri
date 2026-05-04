@@ -4,9 +4,10 @@ See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup i
 
 ## Changelog
 # GUIX
-- Enabled GUIX user creation with `sysusers.d/guix.conf`
+- Enabled GUIX user creation with `usr/lib/sysusers.d/guix.conf`
 - Enabled `dnf` module to ensure installation of GUIX prerequisites
 - Symlinked `var/gnu` to `gnu`
+- Added profile script `etc/profile.d/guix.sh`
 
 ## Installation
 
