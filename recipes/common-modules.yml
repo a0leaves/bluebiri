@@ -16,7 +16,7 @@ modules:
         - waybar
         - mako
         - polkit-kde
-        - swww
+        - awww
         - foot
       exclude:
         - swayidle
