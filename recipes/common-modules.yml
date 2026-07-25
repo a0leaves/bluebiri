@@ -21,10 +21,12 @@ modules:
         - awww
         - foot
       exclude:
+        - fuzzel
+        - waybar
         - swayidle
-        - alacritty
         - swaybg
+        - alacritty
         - fontawesome-6-free-fonts
-        - fontawesome-6-brands
+        - fontawesome-6-brands-fonts
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
