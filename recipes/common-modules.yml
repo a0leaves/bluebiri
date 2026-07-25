@@ -8,12 +8,14 @@ modules:
           - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
         copr:
           - yalter/niri
+          - victorvintorez/packages
         cleanup: true
     install:
       packages:
         - niri
-        - fuzzel
-        - waybar
+        - elephant
+        - walker
+        - ironbar
         - mako
         - polkit-kde
         - awww
