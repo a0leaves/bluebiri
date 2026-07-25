@@ -23,5 +23,8 @@ modules:
       exclude:
         - swayidle
         - alacritty
+        - swaybg
+        - fontawesome-6-free-fonts
+        - fontawesome-6-brands
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
