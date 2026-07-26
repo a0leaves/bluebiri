@@ -1,9 +1,8 @@
 [Unit]
 Description=An Answer to your Wayland Wallpaper Woes
 Documentation=man:awww-daemon(1)
-PartOf=niri.service
+BindsTo=niri.service
 After=niri.service
-Requisite=niri.service
 
 [Service]
 Type=simple
