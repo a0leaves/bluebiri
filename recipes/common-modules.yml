@@ -32,5 +32,6 @@ modules:
   - type: systemd
     user:
       enabled:
+        - elephant.service
         - ironbar.service
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
