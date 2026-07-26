@@ -1,8 +1,7 @@
 [Unit]
 Description=Walker Application Launcher Service
 Documentation=https://github.com/abenz1267/walker
-BindsTo=niri.service
-After=elephant.service
+PartOf=graphical-session.target
 
 [Service]
 ExecStart=/usr/bin/walker --gapplication-service
@@ -10,4 +9,4 @@ Restart=on-failure
 RestartSec=5
 
 [Install]
-WantedBy=niri.service
+WantedBy=default.target
