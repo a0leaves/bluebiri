@@ -2,13 +2,6 @@
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-## Changelog
-# GUIX
-- Enabled GUIX user creation with `usr/lib/sysusers.d/guix.conf`
-- Enabled `dnf` module to ensure installation of GUIX prerequisites
-- Symlinked `var/gnu` to `gnu`
-- Added profile script `etc/profile.d/guix.sh`
-
 ## Installation
 
 > [!WARNING]
