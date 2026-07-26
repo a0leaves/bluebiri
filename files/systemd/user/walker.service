@@ -2,7 +2,7 @@
 Description=Walker Application Launcher Service
 Documentation=https://github.com/abenz1267/walker
 BindsTo=niri.service
-After=niri.service
+After=elephant.service
 
 [Service]
 ExecStart=/usr/bin/walker --gapplication-service
