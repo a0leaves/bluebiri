@@ -1,0 +1,13 @@
+[Unit]
+Description=A customizable GTK bar for Wayland
+Documentation=https://github.com/JakeStanger/ironbar
+BindsTo=niri.service
+After=niri.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ironbar
+Restart=on-failure
+
+[Install]
+WantedBy=niri.service
