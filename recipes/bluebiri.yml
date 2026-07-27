@@ -19,7 +19,7 @@ stages:
             set -euo pipefail
             
             # 1. Install build dependencies
-            dnf install -y cargo gtk4-devel polkit-gobject-devel gettext git
+            dnf install -y cargo gtk4-devel polkit-devel gettext git
             
             # 2. Clone specific version tag of Soteria
             git clone --branch v0.3.2 https://github.com/imvaskel/soteria.git /tmp/soteria
