@@ -1,6 +1,8 @@
 # bluebiri &nbsp; [![bluebuild build badge](https://github.com/a0leaves/bluebiri/actions/workflows/build.yml/badge.svg)](https://github.com/a0leaves/bluebiri/actions/workflows/build.yml)
 
-Niri with Walker app launcher, Ironbar status bar, awww wallpaper daemon, and Soteria polkit.
+The aim of this project is to ship a cutting edge stack of desktop tools complementary to Niri. At present, the `bluefin:stable` image serves as the foundation which means the full GNOME DE can be used as a fallback.
+
+At present, the image includes the app launcher Walker, the status bar Ironbar, awww for wallpapers, and Soteria as the polkit solution. Services to start them are also included and enabled. However, there is no configuration or styling ready at this time. 
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 

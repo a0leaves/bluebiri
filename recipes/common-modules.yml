@@ -18,7 +18,6 @@ modules:
         - walker
         - ironbar
         - mako
-        - polkit-kde
         - awww
         - foot
       exclude:

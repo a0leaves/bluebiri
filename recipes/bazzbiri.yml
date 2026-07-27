@@ -9,8 +9,29 @@ description: The Bazzite Gnome image from Universal Blue with Niri included. Mad
 base-image: ghcr.io/ublue-os/bazzite-gnome
 image-version: stable
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
+stages:
+  - name: soteria-builder
+    from: registry.fedoraproject.org/fedora:41
+    modules:
+      - type: script
+        snippets:
+          - |
+            set -euo pipefail
+            
+            # 1. Install build dependencies
+            dnf install -y cargo gtk4-devel polkit-devel gettext git
+            
+            # 2. Clone specific version tag of Soteria
+            git clone --branch v0.3.2 https://github.com/imvaskel/soteria.git /tmp/soteria
+            
+            # 3. Build release binary
+            cd /tmp/soteria
+            cargo build --release
+
 modules:
-  - from-file: soteria-builder.yml
+  # Copy compiled binary from builder stage to final image
+  - type: copy
+    from: soteria-builder
+    src: /tmp/soteria/target/release/soteria
+    dest: /usr/bin/soteria
   - from-file: common-modules.yml
