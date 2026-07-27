@@ -1,5 +1,7 @@
 # bluebiri &nbsp; [![bluebuild build badge](https://github.com/a0leaves/bluebiri/actions/workflows/build.yml/badge.svg)](https://github.com/a0leaves/bluebiri/actions/workflows/build.yml)
 
+Niri with Walker app launcher, Ironbar status bar, awww wallpaper daemon, and Soteria polkit.
+
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 ## Installation
