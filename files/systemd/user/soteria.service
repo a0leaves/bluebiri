@@ -1,9 +1,8 @@
 [Unit]
 Description=Soteria Polkit Authentication Agent
 Documentation=https://github.com/imvaskel/soteria
-PartOf=graphical-session.target
-After=graphical-session.target
-Requisite=graphical-session.target
+After=niri.service
+BindsTo=niri.service
 
 [Service]
 Type=simple
@@ -11,4 +10,4 @@ ExecStart=/usr/bin/soteria
 Restart=on-failure
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=niri.service

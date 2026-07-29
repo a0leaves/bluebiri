@@ -1,8 +1,8 @@
 [Unit]
 Description=A customizable GTK bar for Wayland
 Documentation=https://github.com/JakeStanger/ironbar
-BindsTo=niri.service
 After=niri.service
+BindsTo=niri.service
 
 [Service]
 Type=simple

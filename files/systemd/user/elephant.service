@@ -1,6 +1,7 @@
 [Unit]
 Description=Elephant
-After=graphical-session.target
+After=niri.service
+BindsTo=niri.service
 
 [Service]
 Type=simple
@@ -8,4 +9,4 @@ ExecStart=elephant
 Restart=on-failure
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=niri.service
