@@ -25,6 +25,7 @@ modules:
         - waybar
         - swayidle
         - swaybg
+        - swaylock
         - alacritty
         - fontawesome-6-free-fonts
         - fontawesome-6-brands-fonts
