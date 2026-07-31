@@ -1,0 +1,12 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+modules:
+  - type: script
+    snippets:
+      - |
+        set -euo pipefail
+        dnf install -y cargo gtk4-devel polkit-devel gettext git
+        git clone --branch v0.3.2 https://github.com/imvaskel/soteria.git /tmp/soteria
+        cd /tmp/soteria
+        cargo build --release
