@@ -10,15 +10,21 @@ base-image: ghcr.io/ublue-os/bluefin
 image-version: stable
 
 stages:
-  - name: manual-app-builds
+  - name: soteria-builder
     from: registry.fedoraproject.org/fedora:41
     modules:
-      - from-file: soteria-builder.yml
+      - type: script
+        snippets:
+          - |
+            set -euo pipefail
+            dnf install -y cargo gtk4-devel polkit-devel gettext git
+            git clone --branch v0.3.2 https://github.com/imvaskel/soteria.git /tmp/soteria
+            cd /tmp/soteria
+            cargo build --release
 
 modules:
-  # Copy compiled binary from builder stage to final image
   - type: copy
-    from: manual-app-builds
+    from: soteria-builder
     src: /tmp/soteria/target/release/soteria
     dest: /usr/bin/soteria
   - from-file: common-modules.yml
