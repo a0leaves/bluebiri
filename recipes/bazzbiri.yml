@@ -34,4 +34,9 @@ modules:
     from: soteria-builder
     src: /tmp/soteria/target/release/soteria
     dest: /usr/bin/soteria
+  - type: dnf
+    repos:
+      cleanup: true
+      enable:
+        - terra
   - from-file: common-modules.yml

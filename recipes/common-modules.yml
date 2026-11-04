@@ -5,8 +5,6 @@ modules:
   - type: dnf
     repos:
       cleanup: true
-      enable:
-        - terra
       copr:
         - yalter/niri
         - errornointernet/walker

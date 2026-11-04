@@ -26,4 +26,9 @@ modules:
     from: soteria-builder
     src: /tmp/soteria/target/release/soteria
     dest: /usr/bin/soteria
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
   - from-file: common-modules.yml
