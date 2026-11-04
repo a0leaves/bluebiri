@@ -36,7 +36,6 @@ modules:
     dest: /usr/bin/soteria
   - type: dnf
     repos:
-      cleanup: true
       enable:
         - terra
     install:
