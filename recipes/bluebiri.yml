@@ -21,10 +21,14 @@ stages:
             git clone --branch v0.3.2 https://github.com/imvaskel/soteria.git /tmp/soteria
             cd /tmp/soteria
             cargo build --release
-
 modules:
   - type: copy
     from: soteria-builder
     src: /tmp/soteria/target/release/soteria
     dest: /usr/bin/soteria
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
   - from-file: common-modules.yml

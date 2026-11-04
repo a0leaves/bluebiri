@@ -5,8 +5,6 @@ modules:
   - type: dnf
     repos:
       cleanup: true
-      files:
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
       copr:
         - yalter/niri
         - errornointernet/walker
