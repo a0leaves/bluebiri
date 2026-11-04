@@ -39,4 +39,7 @@ modules:
       cleanup: true
       enable:
         - terra
+    install:
+      packages:
+        - awww
   - from-file: common-modules.yml

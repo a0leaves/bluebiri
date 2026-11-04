@@ -31,4 +31,7 @@ modules:
       cleanup: true
       files:
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    install:
+      packages:
+        - awww
   - from-file: common-modules.yml

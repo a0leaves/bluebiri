@@ -16,7 +16,6 @@ modules:
         - walker
         - ironbar
         - mako
-        - awww
         - foot
       exclude:
         - fuzzel
