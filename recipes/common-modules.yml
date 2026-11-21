@@ -17,7 +17,6 @@ modules:
         - ironbar
         - mako
         - foot
-        - gnome-keyring-pam
       exclude:
         - fuzzel
         - waybar
